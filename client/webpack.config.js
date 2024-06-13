@@ -25,6 +25,21 @@ module.exports = () => {
         swSrc: "./src-sw.js",
         swDest: "src-sw.js",
       }),
+      new WebpackPwaManifest({
+        name: "PWA Note Editor",
+        short_name: "Edit",
+        description: "Create an editor",
+        icons: [
+          {
+            src: path.resolve("src/images/logo.png"),
+            sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+            destination: path.join("assets", "icons"),
+          },
+        ],
+        start_url: "/",
+        publicPath: "/",
+        fingerprints: false,
+      }),
     ],
 
     module: {
