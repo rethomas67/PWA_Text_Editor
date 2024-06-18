@@ -1,4 +1,5 @@
 // Import methods to save and get data from the indexedDB database in './database.js'
+//pull in the database methods and the JATE header
 import { getDb, putDb } from "./database";
 import { header } from "./header";
 

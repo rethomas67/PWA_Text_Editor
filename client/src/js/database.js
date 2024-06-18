@@ -1,5 +1,5 @@
 import { openDB } from "idb";
-
+//create the database and the object store if they don't exist
 const initdb = async () =>
   openDB("jate", 1, {
     upgrade(db) {
@@ -13,6 +13,8 @@ const initdb = async () =>
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
+//create a put method to update the object store with new content
+//need permission to write to the store
 export const putDb = async (content) => {
   console.log("PUT to the database");
   const editorDb = await openDB("jate", 1);
@@ -24,6 +26,7 @@ export const putDb = async (content) => {
 };
 
 // TODO: Add logic for a method that gets all the content from the database
+//create a transaction to get all of the records in indexdb
 export const getDb = async () => {
   console.log("GET all from the database");
   const editorDb = await openDB("jate", 1);

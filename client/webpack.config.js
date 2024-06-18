@@ -25,6 +25,7 @@ module.exports = () => {
         swSrc: "./src-sw.js",
         swDest: "src-sw.js",
       }),
+      //add the icons to dist and remove the fingerprints from the name
       new WebpackPwaManifest({
         name: "PWA Note Editor",
         short_name: "Edit",
