@@ -36,6 +36,7 @@ Lastly, Heroku is fully deployed.
 ![alt text](image-8.png)
 
 GitHub Repository: https://github.com/rethomas67/PWA_Text_Editor
+
 Live Server: https://bcs-pwa-text-editor-6d87964a4d78.herokuapp.com/
 
 ## Credits
